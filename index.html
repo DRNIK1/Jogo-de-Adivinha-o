@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="laoyut5.css">
+    <script src="script5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Jogo de Adivinhação"
+        </h1>
+
+        <div id="texto">
+            <p>
+                O jogo irá gerar um número aleatório entre 1 e 100, e 
+                o jogador terá que adivinhar qual é esse número. O jogo
+                dará dicas ao jogador. O jogo termina quando o jogador 
+                acertar o número ou quando atingir um número máximo de 
+                tentativas. 
+            </p>
+        </div>
+    </header>
+    <main>
+
+        <label for="palpite">Palpite:</label>
+        <input type="number" id="palpite">
+
+        <button id="botao" onclick="adivinhar()">Chutar!!!</button>
+        <audio id="ganhou" src="mixkit-retro-game-notification-212.wav"></audio>
+        <audio id="tentativa" src="mixkit-gaming-lock-2848.wav"></audio>
+        <audio id="perda" src="mixkit-sad-game-over-trombone-471.wav"></audio>
+    </main>
+
+    <div class="container">
+        <div id="dicas">
+            <P>Dicas!!!</P>
+        </div>
+
+        <div id="tentativas">
+            <p>Tentativas restantes:</p>
+        </div>
+
+        <p id="historico">Palpites anteriores: Nenhum ainda.</p>
+    </div>
+
+</body>
+</html>
